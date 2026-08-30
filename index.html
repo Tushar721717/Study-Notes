@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyNotes | Notes for Students</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            📚 StudyNotes
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#notes">Notes</a>
+            <a href="#about">About</a>
+        </div>
+
+        <button class="dark-btn" onclick="toggleDarkMode()">
+            🌙
+        </button>
+
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="tag">STUDY • LEARN • GROW</span>
+
+        <h1>
+            Everything you need to<br>
+            <span>study better.</span>
+        </h1>
+
+        <p>
+            Find notes, study materials and important topics
+            for your course in one place.
+        </p>
+
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Mathematics, Java, Python..."
+                onkeyup="searchNotes()"
+            >
+
+            <button onclick="searchNotes()">
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="courses">
+
+    <div class="heading">
+        <span>EXPLORE</span>
+        <h2>Popular Courses</h2>
+        <p>Select your course and start learning.</p>
+    </div>
+
+
+    <div class="course-grid">
+
+        <div class="course-card">
+            <div class="icon">💻</div>
+            <h3>BCA</h3>
+            <p>Bachelor of Computer Applications</p>
+            <a href="#notes">View Notes →</a>
+        </div>
+
+
+        <div class="course-card">
+            <div class="icon">⚙️</div>
+            <h3>B.Tech</h3>
+            <p>Engineering study material</p>
+            <a href="#notes">View Notes →</a>
+        </div>
+
+
+        <div class="course-card">
+            <div class="icon">📊</div>
+            <h3>BBA</h3>
+            <p>Business Administration</p>
+            <a href="#notes">View Notes →</a>
+        </div>
+
+
+        <div class="course-card">
+            <div class="icon">🧑‍💻</div>
+            <h3>MCA</h3>
+            <p>Master of Computer Applications</p>
+            <a href="#notes">View Notes →</a>
+            
+        </div> 
+        <div class="course-card">
+
+    <div class="icon">💊</div>
+
+    <h3>B.Pharm</h3>
+
+    <p>Bachelor of Pharmacy</p>
+
+    <a href="notes/bpharm.html">
+        View Notes →
+    </a>
+
+</div>
+         
+        
+    </div>
+
+</section>
+
+
+<section class="section" id="notes">
+
+    <div class="heading">
+
+        <span>STUDY MATERIAL</span>
+
+        <h2>Available Notes</h2>
+
+        <p>
+            Search and open your subject notes.
+        </p>
+
+    </div>
+
+
+    <div id="noResults" class="no-results">
+        No notes found. Try another search.
+    </div>
+
+
+    <div class="notes-grid" id="notesGrid">
+
+
+        <!-- Mathematics -->
+
+        <div class="note-card" data-search="mathematics maths bca">
+
+            <div class="note-icon">
+                📐
+            </div>
+
+            <div class="note-info">
+
+                <span>BCA • SEMESTER 1</span>
+
+                <h3>Mathematics</h3>
+
+                <p>
+                    Matrices, determinants, eigen values,
+                    permutation and statistics.
+                </p>
+
+                <a href="mathmatics.html">
+                    Read Notes →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Java -->
+
+        <div class="note-card" data-search="java programming bca">
+
+            <div class="note-icon">
+                ☕
+            </div>
+
+            <div class="note-info">
+
+                <span>BCA • PROGRAMMING</span>
+
+                <h3>Java Programming</h3>
+
+                <p>
+                    OOP, classes, objects, inheritance,
+                    polymorphism and exceptions.
+                </p>
+
+                <a href="notes/java.html">
+                    Read Notes →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Python -->
+
+        <div class="note-card" data-search="python programming bca">
+
+            <div class="note-icon">
+                🐍
+            </div>
+
+            <div class="note-info">
+
+                <span>BCA • PROGRAMMING</span>
+
+                <h3>Python Programming</h3>
+
+                <p>
+                    Python basics, variables, loops,
+                    functions and data structures.
+                </p>
+
+                <a href="notes/python.html">
+                    Read Notes →
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="telegram-section">
+
+    <div class="telegram-content">
+
+        <div class="telegram-icon">
+            ✈️
+        </div>
+
+        <div>
+            <span>JOIN OUR COMMUNITY</span>
+
+            <h2>StudyNotes on Telegram</h2>
+
+            <p>
+                Get new notes, study materials, PDFs and
+                important updates directly on Telegram.
+            </p>
+        </div>
+
+        <a href="https://t.me/YourTelegramUsername"
+           target="_blank"
+           class="telegram-btn">
+            Join Telegram →
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <h2>Study smarter with StudyNotes.</h2>
+
+    <p>
+        All your important study materials in one place.
+    </p>
+
+    <a href="#notes">
+        Explore Notes
+    </a>
+
+</section>
+
+
+<section class="about" id="about">
+
+    <div>
+
+        <span>ABOUT US</span>
+
+        <h2>
+            Built for<br>
+            students.
+        </h2>
+
+    </div>
+
+    <p>
+        StudyNotes is a simple platform designed to help
+        students find useful notes and study materials
+        quickly and easily.
+    </p>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">
+        📚 StudyNotes
+    </div>
+
+    <p>
+        © 2026 StudyNotes. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="bablu.js"></script>
+
+</body>
+</html>
+```
